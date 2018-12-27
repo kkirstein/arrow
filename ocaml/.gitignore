@@ -1,0 +1,11 @@
+# vim files
+*~
+*.swp
+
+# dune
+**/.merlin
+*.install
+_build/
+
+# dist
+dist

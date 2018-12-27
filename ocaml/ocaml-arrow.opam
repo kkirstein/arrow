@@ -1,0 +1,15 @@
+opam-version: "2.0"
+name: "ocaml-arrow"
+maintainer: "kay-uwe@kirsteinhome.ch"
+authors: ["Kay-Uwe Kirstein"]
+dev-repo: "https://github.com/kkirstein/arrow.git"
+license: "Apache"
+build: [
+	["dune" "build" "-p" name "-j" jobs]
+]
+build-test: [
+	["dune" "runtest" "-p" name "-j" jobs]
+]
+depends: [
+	"dune" {build}
+]
